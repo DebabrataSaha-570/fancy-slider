@@ -4,10 +4,17 @@ const input = document.getElementById("search");
 
 input.addEventListener("keyup", function (event) {
   // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
+
+  if (event.key === "Enter") {
     // Trigger the button element with a click
     document.getElementById('search-btn').click();
   }
+
+
+  // if (event.keyCode === 13) {
+  //   // Trigger the button element with a click
+  //   document.getElementById('search-btn').click();
+  // }
 });
 
 // enter event lister on createSlider btn 
